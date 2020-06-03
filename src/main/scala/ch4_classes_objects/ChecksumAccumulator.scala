@@ -1,4 +1,4 @@
-package p4_classes_objects
+package ch4_classes_objects
 
 import scala.collection.mutable
 

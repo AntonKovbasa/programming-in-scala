@@ -1,6 +1,6 @@
-package p4_classes_objects
+package ch4_classes_objects
 
-import p4_classes_objects.ChecksumAccumulator.calculate
+import ch4_classes_objects.ChecksumAccumulator.calculate
 
 object FallWinterSpringSummer extends App {
 

@@ -1,4 +1,4 @@
-package p8_functions_and_closures
+package ch8_functions_and_closures
 
 object FindLongLines {
 

@@ -1,4 +1,4 @@
-package p7_builtin_control_structures
+package ch7_builtin_control_structures
 
 object MatchExpressions {
   def main(args: Array[String]): Unit = {

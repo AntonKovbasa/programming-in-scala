@@ -1,4 +1,4 @@
-package p6_functional_objects
+package ch6_functional_objects
 
 class Rational(n: Int, d: Int) {
   require(d != 0)
