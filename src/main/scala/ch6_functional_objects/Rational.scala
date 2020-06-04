@@ -1,6 +1,6 @@
 package ch6_functional_objects
 
-class Rational(n: Int, d: Int) {
+class Rational(n: Int, d: Int) extends Ordered[Rational]{
   require(d != 0)
 
   private val g = gcd(n.abs, d.abs)
@@ -41,8 +41,13 @@ class Rational(n: Int, d: Int) {
   def /(i: Int): Rational =
     new Rational(numer, denom * i)
 
-  implicit def intToRational(x: Int): Rational = new
-      Rational(x)
+
+  override def compare(that: Rational): Int =
+    (this.numer * that.denom) - (that.numer * this.denom)
+
+
+  /*implicit def intToRational(x: Int): Rational = new
+      Rational(x)*/
 
   override def toString: String = numer + "/" + denom
 
